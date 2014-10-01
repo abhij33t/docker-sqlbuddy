@@ -3,6 +3,8 @@ Docker Sqlbuddy
 
 Builds an apache2/php5 docker image with SqlBuddy (http://sqlbuddy.com/) pre-installed.
 
+This image builds on the tutum/apache-php image (https://registry.hub.docker.com/u/tutum/apache-php/).
+
 	USAGE:
 		docker build -t sqlbuddy .
 		docker run -d --name=sqlbuddy -P --link=mysql_container:mysql sqlbuddy
