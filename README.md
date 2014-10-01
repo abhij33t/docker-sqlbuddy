@@ -10,6 +10,7 @@ Builds an apache2/php5 docker image with SqlBuddy (http://sqlbuddy.com/) pre-ins
 		docker run -d --name=sqlbuddy -P --link=mysql-test:mysql tvalladon/sqlbuddy
 
 **NOTE**
+
 	After you launch the docker get the public port using:
 		docker port sqlbuddy 80
 		The response will be something along the lines of:
