@@ -9,7 +9,7 @@ This image builds on the tutum/apache-php image (https://registry.hub.docker.com
 		docker build -t sqlbuddy .
 		docker run -d --name=sqlbuddy -P --link=mysql_container:mysql sqlbuddy
 	ALT USAGE (Pulls from tvalladon/sqlbuddy docker hub):
-		docker run -d --name=sqlbuddy -P --link=mysql-test:mysql tvalladon/sqlbuddy
+		docker run -d --name=sqlbuddy -P --link=mysql_container:mysql tvalladon/sqlbuddy
 
 **NOTE**
 
